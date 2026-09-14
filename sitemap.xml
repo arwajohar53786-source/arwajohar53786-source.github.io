@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  This file is not needed while you're just testing your site.
-  It only matters once you want Google to index a real, permanent site address.
-  See the README for what to do with it then.
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>PASTE-YOUR-SITE-URL-HERE/</loc>
+    <loc>https://arwajohar53786-source.github.io/</loc>
     <priority>1.0</priority>
   </url>
 </urlset>
