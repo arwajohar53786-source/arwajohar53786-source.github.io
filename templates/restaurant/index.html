@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Template — Restaurant / Café | by Arwa Johar</title>
+<meta name="description" content="A restaurant and café website concept template, built by freelance web developer Arwa Johar.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#1B0C0E; --bg-2:#2A1114; --gold:#D9A544; --cream:#F4EBDD; --line:rgba(244,235,221,.16);
+    --serif:"Cormorant Garamond", Georgia, serif; --sans:"Inter", sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--cream);font-family:var(--sans);line-height:1.6;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 26px;}
+  .demo-banner{background:var(--gold);color:#241005;text-align:center;font-size:.85rem;font-weight:600;padding:10px;}
+  .demo-banner a{text-decoration:underline;}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;letter-spacing:.01em;}
+  section{padding:96px 0;}
+  @media(max-width:700px){section{padding:64px 0;}}
+
+  nav.top{display:flex;justify-content:space-between;align-items:center;padding:26px 0;}
+  .brand{font-family:var(--serif);font-size:1.4rem;letter-spacing:.03em;}
+  .brand em{color:var(--gold);font-style:normal;}
+  .nav-links{display:flex;gap:28px;font-size:.9rem;}
+  @media(max-width:640px){.nav-links{display:none;}}
+
+  .hero{padding:60px 0 90px;text-align:center;position:relative;}
+  .hero .tagline{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:1.1rem;}
+  .hero h1{font-size:clamp(2.4rem,6vw,4.2rem);margin-top:16px;line-height:1.1;}
+  .hero p{max-width:52ch;margin:22px auto 0;color:rgba(244,235,221,.75);font-size:1.05rem;}
+  .hero-actions{margin-top:38px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 30px;border-radius:2px;font-size:.92rem;font-weight:600;border:1px solid var(--gold);transition:transform .25s ease,background .25s ease;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-solid{background:var(--gold);color:#241005;}
+  .btn-solid:hover{background:#e8b95c;}
+  .btn-ghost{color:var(--cream);}
+  .btn-ghost:hover{background:rgba(244,235,221,.08);}
+
+  .hero-visual{margin-top:56px;aspect-ratio:21/9;border-radius:6px;background:
+    radial-gradient(circle at 25% 30%, rgba(217,165,68,.35), transparent 55%),
+    linear-gradient(135deg,#3A1418,#160709);
+    border:1px solid var(--line);position:relative;overflow:hidden;}
+  .hero-visual::after{content:"Replace with a photo of your dishes or dining room";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(244,235,221,.4);font-size:.85rem;text-align:center;padding:20px;}
+
+  .section-label{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:1.05rem;}
+  .section-head{max-width:560px;margin-bottom:48px;}
+  .section-head h2{font-size:2.1rem;margin-top:10px;}
+  .center{text-align:center;margin-left:auto;margin-right:auto;}
+
+  .menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+  @media(max-width:700px){.menu-grid{grid-template-columns:1fr;}}
+  .menu-item{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px dashed var(--line);}
+  .menu-item h4{font-family:var(--serif);font-size:1.2rem;font-weight:500;}
+  .menu-item p{margin-top:4px;font-size:.88rem;color:rgba(244,235,221,.6);}
+  .menu-item span{font-family:var(--serif);color:var(--gold);white-space:nowrap;font-size:1.1rem;}
+
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  @media(max-width:760px){.gallery{grid-template-columns:repeat(2,1fr);}}
+  .gallery div{aspect-ratio:1;border-radius:4px;background:linear-gradient(150deg,#3A1418,#160709);border:1px solid var(--line);}
+  .gallery div:nth-child(2){background:linear-gradient(150deg,#43201A,#1B0C0E);}
+  .gallery div:nth-child(3){background:linear-gradient(150deg,#331014,#0F0507);}
+  .gallery div:nth-child(4){background:linear-gradient(150deg,#4A2418,#1B0C0E);}
+
+  .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
+  @media(max-width:700px){.info-grid{grid-template-columns:1fr;}}
+  .info-block h3{font-size:1.3rem;}
+  .info-block p{margin-top:10px;color:rgba(244,235,221,.72);}
+
+  footer{padding:40px 0;text-align:center;font-size:.85rem;color:rgba(244,235,221,.55);border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">This is a Demo Template built by Arwa Johar — not a real restaurant. <a href="../../index.html">See more templates</a></div>
+
+<header class="wrap">
+  <nav class="top">
+    <span class="brand"><em>Bombay</em> Spice House</span>
+    <div class="nav-links">
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit Us</a>
+    </div>
+    <a href="https://wa.me/919372383397?text=Hi%2C%20I%27d%20like%20to%20reserve%20a%20table." target="_blank" rel="noopener" class="btn btn-solid" style="padding:10px 20px;font-size:.85rem;">Reserve</a>
+  </nav>
+</header>
+
+<section class="hero wrap">
+  <span class="tagline">Since the first tawa hit the flame</span>
+  <h1>Food that tastes like<br>home, plated like a memory.</h1>
+  <p>Modern Indian small plates and slow-cooked classics, in a warm room built for long dinners and second helpings.</p>
+  <div class="hero-actions">
+    <a href="#menu" class="btn btn-ghost">View Menu</a>
+    <a href="https://wa.me/919372383397?text=Hi%2C%20I%27d%20like%20to%20reserve%20a%20table." target="_blank" rel="noopener" class="btn btn-solid">Reserve a Table</a>
+  </div>
+  <div class="hero-visual" role="img" aria-label="Placeholder for a photo of the restaurant"></div>
+</section>
+
+<section id="menu" class="wrap">
+  <div class="section-head">
+    <span class="section-label">The Menu</span>
+    <h2>A short menu, done properly.</h2>
+  </div>
+  <div class="menu-grid">
+    <div class="menu-item"><div><h4>Tandoori Galouti Kebab</h4><p>Slow-smoked minced lamb, warm roomali roti</p></div><span>₹420</span></div>
+    <div class="menu-item"><div><h4>Bombay Bhel Chaat</h4><p>Puffed rice, tamarind, pomegranate</p></div><span>₹180</span></div>
+    <div class="menu-item"><div><h4>Butter Garlic Prawns</h4><p>Coastal prawns, roasted garlic butter</p></div><span>₹560</span></div>
+    <div class="menu-item"><div><h4>Dal Bombay Makhani</h4><p>24-hour slow-cooked black lentils</p></div><span>₹280</span></div>
+    <div class="menu-item"><div><h4>Kolhapuri Mutton Rassa</h4><p>Fiery Kolhapuri spice blend, steamed rice</p></div><span>₹520</span></div>
+    <div class="menu-item"><div><h4>Saffron Phirni</h4><p>Set rice pudding, pistachio, saffron</p></div><span>₹160</span></div>
+  </div>
+</section>
+
+<section id="gallery" class="wrap">
+  <div class="section-head">
+    <span class="section-label">Inside the House</span>
+    <h2>A room worth showing up for.</h2>
+  </div>
+  <div class="gallery" role="img" aria-label="Placeholder gallery for restaurant and food photography">
+    <div></div><div></div><div></div><div></div>
+  </div>
+</section>
+
+<section id="visit" class="wrap">
+  <div class="info-grid">
+    <div class="info-block">
+      <h3>Hours</h3>
+      <p>Tuesday – Sunday, 12:30 PM – 3:30 PM<br>Tuesday – Sunday, 7:00 PM – 11:30 PM<br>Closed Mondays</p>
+    </div>
+    <div class="info-block">
+      <h3>Location</h3>
+      <p>14 Pali Hill Road, Bandra West<br>Mumbai, Maharashtra 400050</p>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  Demo template by <a href="../../index.html" style="color:var(--gold);">Arwa Johar — Freelance Web Developer</a>
+</footer>
+
+</body>
+</html>

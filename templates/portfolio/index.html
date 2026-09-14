@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Template — Personal Portfolio | by Arwa Johar</title>
+<meta name="description" content="A personal portfolio website concept template, built by freelance web developer Arwa Johar.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0B0B0D; --ink:#F2F2F0; --muted:#8C8C92; --line:#232327; --accent:#B7F14C;
+    --font:"Space Grotesk", sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.55;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 26px;}
+  .demo-banner{background:var(--accent);color:#0B0B0D;text-align:center;font-size:.85rem;font-weight:600;padding:10px;}
+  .demo-banner a{text-decoration:underline;}
+  h1,h2,h3{margin:0;font-weight:600;letter-spacing:-.01em;}
+  section{padding:100px 0;border-top:1px solid var(--line);}
+  @media(max-width:700px){section{padding:64px 0;}}
+
+  nav.top{display:flex;justify-content:space-between;align-items:center;padding:30px 0;border-top:none;}
+  .brand{font-size:1.1rem;font-weight:600;}
+  .nav-links{display:flex;gap:26px;font-size:.9rem;color:var(--muted);}
+  .nav-links a:hover{color:var(--ink);}
+  @media(max-width:640px){.nav-links{display:none;}}
+
+  .hero{padding:40px 0 80px;border-top:none;}
+  .hero .role{color:var(--accent);font-size:1rem;}
+  .hero h1{font-size:clamp(2.8rem,7vw,5.4rem);margin-top:14px;line-height:1.02;}
+  .hero p{max-width:52ch;margin-top:24px;color:var(--muted);font-size:1.1rem;}
+  .hero-actions{margin-top:34px;display:flex;gap:16px;flex-wrap:wrap;}
+  .btn{display:inline-flex;align-items:center;padding:14px 28px;border-radius:100px;font-size:.92rem;font-weight:600;border:1px solid var(--line);transition:transform .25s ease,background .25s ease,color .25s ease;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-solid{background:var(--accent);color:#0B0B0D;border-color:var(--accent);}
+  .btn-solid:hover{background:#c8ff66;}
+  .btn-ghost{color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--ink);}
+
+  .section-label{color:var(--accent);font-size:.9rem;}
+  .section-head{margin-bottom:44px;}
+  .section-head h2{font-size:2rem;margin-top:10px;}
+
+  .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+  @media(max-width:700px){.work-grid{grid-template-columns:1fr;}}
+  .work-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;transition:transform .3s ease;}
+  .work-card:hover{transform:translateY(-4px);}
+  .work-visual{aspect-ratio:16/10;position:relative;}
+  .work-visual::after{content:attr(data-label);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(242,242,240,.55);font-size:.8rem;text-align:center;padding:16px;}
+  .wv1{background:linear-gradient(150deg,#1c1c22,#0B0B0D);}
+  .wv2{background:linear-gradient(150deg,#20241a,#0B0B0D);}
+  .wv3{background:linear-gradient(150deg,#1a1c24,#0B0B0D);}
+  .wv4{background:linear-gradient(150deg,#221c1a,#0B0B0D);}
+  .work-body{padding:22px 24px;}
+  .work-body h3{font-size:1.1rem;}
+  .work-body p{margin-top:6px;color:var(--muted);font-size:.9rem;}
+  .work-body .tags{margin-top:14px;display:flex;gap:8px;flex-wrap:wrap;}
+  .work-body .tags span{font-size:.72rem;padding:4px 10px;border-radius:100px;border:1px solid var(--line);color:var(--muted);}
+
+  .skills{display:flex;flex-wrap:wrap;gap:12px;}
+  .skills span{padding:10px 18px;border:1px solid var(--line);border-radius:100px;font-size:.88rem;color:var(--muted);}
+
+  .contact-cta{text-align:center;padding:110px 0;}
+  .contact-cta h2{font-size:clamp(2.2rem,5vw,3.4rem);}
+  .contact-cta p{margin-top:16px;color:var(--muted);}
+  .contact-cta .btn{margin-top:30px;}
+
+  footer{padding:36px 0;text-align:center;font-size:.85rem;color:var(--muted);border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">This is a Demo Template built by Arwa Johar — the portfolio shown is a fictional example. <a href="../../index.html" style="color:#0B0B0D;">See more templates</a></div>
+
+<header class="wrap">
+  <nav class="top">
+    <span class="brand">Rahul Mehta</span>
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="https://wa.me/919372383397?text=Hi%2C%20I%27d%20like%20a%20portfolio%20website%20like%20this." target="_blank" rel="noopener" class="btn btn-solid" style="padding:10px 20px;font-size:.82rem;">Get This Style</a>
+  </nav>
+</header>
+
+<section class="hero wrap">
+  <span class="role">Product Designer</span>
+  <h1>I design digital products that people enjoy using.</h1>
+  <p>Independent product designer working with startups and small teams on interfaces, systems and the details in between.</p>
+  <div class="hero-actions">
+    <a href="#work" class="btn btn-ghost">See Work</a>
+    <a href="#contact" class="btn btn-solid">Get in Touch</a>
+  </div>
+</section>
+
+<section id="work" class="wrap">
+  <div class="section-head">
+    <span class="section-label">Selected Work</span>
+    <h2>A few recent projects</h2>
+  </div>
+  <div class="work-grid">
+    <div class="work-card">
+      <div class="work-visual wv1" data-label="Replace with a project screenshot"></div>
+      <div class="work-body"><h3>Finance App Redesign</h3><p>Simplifying a complex investing app for first-time users.</p><div class="tags"><span>UI Design</span><span>Mobile</span></div></div>
+    </div>
+    <div class="work-card">
+      <div class="work-visual wv2" data-label="Replace with a project screenshot"></div>
+      <div class="work-body"><h3>Grocery Delivery Platform</h3><p>End-to-end ordering flow for a regional delivery startup.</p><div class="tags"><span>Product</span><span>Web</span></div></div>
+    </div>
+    <div class="work-card">
+      <div class="work-visual wv3" data-label="Replace with a project screenshot"></div>
+      <div class="work-body"><h3>Design System</h3><p>A shared component library across three internal tools.</p><div class="tags"><span>Systems</span></div></div>
+    </div>
+    <div class="work-card">
+      <div class="work-visual wv4" data-label="Replace with a project screenshot"></div>
+      <div class="work-body"><h3>Studio Brand Site</h3><p>Brand identity and website for an independent design studio.</p><div class="tags"><span>Branding</span><span>Web</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="wrap">
+  <div class="section-head">
+    <span class="section-label">Toolkit</span>
+    <h2>What I work with</h2>
+  </div>
+  <div class="skills">
+    <span>Figma</span><span>Design Systems</span><span>Prototyping</span><span>User Research</span><span>HTML / CSS</span><span>Motion Design</span>
+  </div>
+</section>
+
+<section id="contact" class="contact-cta wrap">
+  <h2>Want a portfolio like this?</h2>
+  <p>This layout works for designers, developers, writers and photographers alike.</p>
+  <a href="https://wa.me/919372383397?text=Hi%2C%20I%27d%20like%20a%20portfolio%20website%20like%20this." target="_blank" rel="noopener" class="btn btn-solid">Message on WhatsApp</a>
+</section>
+
+<footer class="wrap">
+  Demo template by <a href="../../index.html" style="color:var(--accent);">Arwa Johar — Freelance Web Developer</a>
+</footer>
+
+</body>
+</html>

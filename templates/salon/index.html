@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Template — Beauty Salon / Boutique | by Arwa Johar</title>
+<meta name="description" content="A beauty salon and boutique website concept template, built by freelance web developer Arwa Johar.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,500;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBF3F1; --rose:#C98087; --rose-deep:#9C555D; --ink:#332224; --line:#EBD9D6;
+    --serif:"Cormorant", Georgia, serif; --sans:"Jost", sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 26px;}
+  .demo-banner{background:var(--rose-deep);color:#fff;text-align:center;font-size:.85rem;font-weight:500;padding:10px;}
+  .demo-banner a{text-decoration:underline;color:#fff;}
+  h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;}
+  section{padding:100px 0;}
+  @media(max-width:700px){section{padding:64px 0;}}
+
+  nav.top{display:flex;justify-content:space-between;align-items:center;padding:30px 0;}
+  .brand{font-family:var(--serif);font-size:1.6rem;font-style:italic;letter-spacing:.02em;}
+  .nav-links{display:flex;gap:30px;font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;}
+  @media(max-width:640px){.nav-links{display:none;}}
+
+  .hero{text-align:center;padding:50px 0 20px;}
+  .hero span.tag{font-size:.8rem;text-transform:uppercase;letter-spacing:.18em;color:var(--rose-deep);}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.4rem);margin-top:20px;font-style:italic;line-height:1.1;}
+  .hero p{max-width:48ch;margin:22px auto 0;color:#6b5658;}
+  .hero-actions{margin-top:36px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+  .btn{display:inline-flex;padding:15px 32px;border-radius:100px;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;border:1px solid var(--rose-deep);transition:transform .25s ease,background .25s ease;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-solid{background:var(--rose-deep);color:#fff;}
+  .btn-solid:hover{background:#7f4348;}
+  .btn-ghost{color:var(--rose-deep);}
+  .btn-ghost:hover{background:rgba(156,85,93,.08);}
+
+  .visual-row{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-top:60px;}
+  @media(max-width:700px){.visual-row{grid-template-columns:1fr;}}
+  .visual-row .tall{aspect-ratio:4/5;}
+  .visual-row .stack{display:flex;flex-direction:column;gap:16px;}
+  .visual-row .short{aspect-ratio:16/9;flex:1;}
+  .ph{border-radius:14px;background:linear-gradient(150deg,#E7B9BB,#C98087);position:relative;overflow:hidden;}
+  .ph::after{content:"Replace with your photo";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.7);font-size:.78rem;text-align:center;padding:16px;}
+  .ph.alt{background:linear-gradient(150deg,#D9A6A0,#B9767C);}
+
+  .section-head{max-width:520px;margin:0 auto 50px;text-align:center;}
+  .section-head span{font-size:.8rem;text-transform:uppercase;letter-spacing:.18em;color:var(--rose-deep);}
+  .section-head h2{font-size:2.1rem;margin-top:14px;font-style:italic;}
+
+  .services{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;}
+  @media(max-width:760px){.services{grid-template-columns:1fr;}}
+  .service{background:#fff;padding:34px 28px;text-align:center;}
+  .service h3{font-size:1.15rem;}
+  .service p{margin-top:8px;font-size:.88rem;color:#7a6668;}
+  .service .price{margin-top:14px;font-family:var(--serif);font-size:1.3rem;font-style:italic;color:var(--rose-deep);}
+
+  .quote{text-align:center;max-width:600px;margin:0 auto;}
+  .quote p{font-family:var(--serif);font-size:1.6rem;font-style:italic;line-height:1.4;}
+  .quote span{display:block;margin-top:16px;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:var(--rose-deep);}
+
+  footer{padding:40px 0;text-align:center;font-size:.85rem;color:#8a7577;border-top:1px solid var(--line);}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">This is a Demo Template built by Arwa Johar — not a real salon. <a href="../../index.html">See more templates</a></div>
+
+<header class="wrap">
+  <nav class="top">
+    <span class="brand">Lumière Studio</span>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#book">Book</a>
+    </div>
+    <a href="https://wa.me/919372383397?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="btn btn-solid" style="padding:10px 22px;">Book Now</a>
+  </nav>
+</header>
+
+<section class="hero wrap">
+  <span class="tag">Hair · Skin · Bridal</span>
+  <h1>Look like the best version of you.</h1>
+  <p>A calm, considered space for colour, cut and skin care — tailored to you, every visit.</p>
+  <div class="hero-actions">
+    <a href="#services" class="btn btn-ghost">View Services</a>
+    <a href="https://wa.me/919372383397?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener" class="btn btn-solid">Book an Appointment</a>
+  </div>
+  <div class="visual-row">
+    <div class="ph tall" role="img" aria-label="Placeholder photo of the salon interior"></div>
+    <div class="stack">
+      <div class="ph alt short" role="img" aria-label="Placeholder photo of a styling service"></div>
+      <div class="ph short" role="img" aria-label="Placeholder photo of a client result"></div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="wrap">
+  <div class="section-head">
+    <span>What We Offer</span>
+    <h2>Signature services</h2>
+  </div>
+  <div class="services">
+    <div class="service"><h3>Haircut &amp; Styling</h3><p>Precision cuts, blow-dry finishing</p><div class="price">from ₹800</div></div>
+    <div class="service"><h3>Global Colour</h3><p>Ammonia-free colour, gloss treatments</p><div class="price">from ₹2,500</div></div>
+    <div class="service"><h3>Bridal Package</h3><p>Trial + wedding-day styling</p><div class="price">from ₹15,000</div></div>
+    <div class="service"><h3>Facial &amp; Skin</h3><p>Deep-cleanse and glow facials</p><div class="price">from ₹1,200</div></div>
+    <div class="service"><h3>Manicure &amp; Pedicure</h3><p>Classic and gel finishes</p><div class="price">from ₹900</div></div>
+    <div class="service"><h3>Keratin Treatment</h3><p>Smoothing and frizz control</p><div class="price">from ₹4,500</div></div>
+  </div>
+</section>
+
+<section id="about" class="wrap">
+  <div class="quote">
+    <p>"A good salon should feel like a pause in your day, not another errand."</p>
+    <span>Lumière Studio</span>
+  </div>
+</section>
+
+<footer id="book" class="wrap">
+  Demo template by <a href="../../index.html" style="color:var(--rose-deep);">Arwa Johar — Freelance Web Developer</a>
+</footer>
+
+</body>
+</html>

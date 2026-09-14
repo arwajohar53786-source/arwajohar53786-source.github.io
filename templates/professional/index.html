@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Template — Professional Service / Consultant | by Arwa Johar</title>
+<meta name="description" content="A professional service / consultant website concept template, built by freelance web developer Arwa Johar.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6F5F1; --ink:#101A19; --deep:#0E2A28; --gold:#B08D4F; --line:#DDD8CC; --muted:#5A6664;
+    --serif:"Source Serif 4", Georgia, serif; --sans:"Source Sans 3", sans-serif;
+  }
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.65;}
+  a{color:inherit;text-decoration:none;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 26px;}
+  .demo-banner{background:var(--deep);color:#F6F5F1;text-align:center;font-size:.85rem;font-weight:500;padding:10px;}
+  .demo-banner a{text-decoration:underline;color:var(--gold);}
+  h1,h2,h3{margin:0;font-family:var(--serif);font-weight:600;}
+  section{padding:96px 0;}
+  @media(max-width:700px){section{padding:60px 0;}}
+
+  nav.top{display:flex;justify-content:space-between;align-items:center;padding:28px 0;}
+  .brand{font-family:var(--serif);font-size:1.2rem;}
+  .nav-links{display:flex;gap:28px;font-size:.9rem;color:var(--muted);}
+  @media(max-width:680px){.nav-links{display:none;}}
+
+  .hero{background:var(--deep);color:#F6F5F1;padding:90px 0 110px;}
+  .hero .tag{color:var(--gold);font-family:var(--serif);font-style:italic;font-size:1.05rem;}
+  .hero h1{font-size:clamp(2.2rem,4.6vw,3.3rem);margin-top:16px;max-width:18ch;line-height:1.18;}
+  .hero p{margin-top:20px;max-width:52ch;color:rgba(246,245,241,.72);font-size:1.05rem;}
+  .hero-actions{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{display:inline-flex;align-items:center;padding:14px 28px;border-radius:4px;font-size:.9rem;font-weight:600;border:1px solid var(--gold);transition:transform .25s ease,background .25s ease;}
+  .btn:hover{transform:translateY(-2px);}
+  .btn-solid{background:var(--gold);color:#0E2A28;}
+  .btn-solid:hover{background:#c8a466;}
+  .btn-ghost{color:#F6F5F1;border-color:rgba(246,245,241,.4);}
+  .btn-ghost:hover{background:rgba(246,245,241,.08);}
+
+  .section-label{color:var(--gold);font-family:var(--serif);font-style:italic;font-size:1rem;}
+  .section-head{max-width:560px;margin-bottom:44px;}
+  .section-head h2{font-size:2rem;margin-top:10px;}
+  .section-head p{margin-top:12px;color:var(--muted);font-family:var(--sans);}
+
+  .services-list{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  @media(max-width:700px){.services-list{grid-template-columns:1fr;}}
+  .service{border-top:1px solid var(--line);padding-top:20px;}
+  .service h3{font-size:1.1rem;}
+  .service p{margin-top:8px;color:var(--muted);font-size:.95rem;}
+
+  .approach{display:flex;gap:40px;flex-wrap:wrap;}
+  .approach div{flex:1;min-width:200px;}
+  .approach .num{font-family:var(--serif);color:var(--gold);font-style:italic;font-size:1.2rem;}
+  .approach h4{margin-top:10px;font-size:1.02rem;}
+  .approach p{margin-top:6px;font-size:.9rem;color:var(--muted);}
+
+  .cta-strip{background:var(--deep);color:#F6F5F1;border-radius:6px;padding:64px 44px;text-align:center;}
+  .cta-strip h2{font-size:clamp(1.8rem,4vw,2.5rem);}
+  .cta-strip p{margin-top:12px;color:rgba(246,245,241,.7);font-family:var(--sans);}
+  .cta-strip .btn{margin-top:26px;}
+
+  footer{padding:36px 0;text-align:center;font-size:.85rem;color:var(--muted);}
+</style>
+</head>
+<body>
+
+<div class="demo-banner">This is a Demo Template built by Arwa Johar — not a real firm. <a href="../../index.html">See more templates</a></div>
+
+<header class="wrap">
+  <nav class="top">
+    <span class="brand">Kavita Desai &amp; Associates</span>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a href="https://wa.me/919372383397?text=Hi%2C%20I%27d%20like%20to%20schedule%20a%20consultation." target="_blank" rel="noopener" class="btn btn-solid" style="padding:10px 20px;font-size:.82rem;">Schedule a Call</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="tag">Chartered Accountancy &amp; Tax Advisory</span>
+    <h1>Clear financial guidance for growing businesses.</h1>
+    <p>Tax planning, compliance and advisory for founders and small business owners who want a straight answer, not jargon.</p>
+    <div class="hero-actions">
+      <a href="#services" class="btn btn-ghost">Our Services</a>
+      <a href="https://wa.me/919372383397?text=Hi%2C%20I%27d%20like%20to%20schedule%20a%20consultation." target="_blank" rel="noopener" class="btn btn-solid">Schedule a Consultation</a>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="wrap">
+  <div class="section-head">
+    <span class="section-label">Services</span>
+    <h2>Where we help</h2>
+  </div>
+  <div class="services-list">
+    <div class="service"><h3>Tax Planning &amp; Filing</h3><p>Personal and business tax strategy, filed on time, every time.</p></div>
+    <div class="service"><h3>Company Registration</h3><p>Structuring and registering your business the right way, from day one.</p></div>
+    <div class="service"><h3>Bookkeeping &amp; Compliance</h3><p>Monthly books kept clean, so audits are never a scramble.</p></div>
+    <div class="service"><h3>Financial Advisory</h3><p>Ongoing guidance as your business grows and gets more complex.</p></div>
+  </div>
+</section>
+
+<section id="approach" class="wrap">
+  <div class="section-head">
+    <span class="section-label">How We Work</span>
+    <h2>A calm, structured process</h2>
+  </div>
+  <div class="approach">
+    <div><div class="num">01</div><h4>Understand</h4><p>A first call to understand your business and current situation.</p></div>
+    <div><div class="num">02</div><h4>Assess</h4><p>Reviewing your existing filings, structure and records.</p></div>
+    <div><div class="num">03</div><h4>Recommend</h4><p>A clear, written plan with next steps and timelines.</p></div>
+    <div><div class="num">04</div><h4>Execute</h4><p>Ongoing filing, compliance and advisory support.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="wrap">
+  <div class="cta-strip">
+    <h2>Ready for a straight answer on your finances?</h2>
+    <p>Send a message on WhatsApp and we'll set up a call.</p>
+    <a href="https://wa.me/919372383397?text=Hi%2C%20I%27d%20like%20to%20schedule%20a%20consultation." target="_blank" rel="noopener" class="btn btn-solid">Message on WhatsApp</a>
+  </div>
+</section>
+
+<footer class="wrap">
+  Demo template by <a href="../../index.html" style="color:var(--gold);">Arwa Johar — Freelance Web Developer</a>
+</footer>
+
+</body>
+</html>

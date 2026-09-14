@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# Once this site has a real address (a custom domain, or you decide to make it
+# permanent), add a line here like:
+# Sitemap: https://your-domain.com/sitemap.xml
